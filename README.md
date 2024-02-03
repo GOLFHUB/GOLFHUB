@@ -1,3 +1,11 @@
+# Create color
+
+```lua
+_G.Color = Color3.fromRGB(0, 0, 255) -- Color UI
+_G.Logo = 13990972098 -- ID Logo Your Hub
+```
+
+
 # Misc
 
 ```diff
@@ -6,8 +14,6 @@ local normal = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GOLFH
 
 # Create Window
 ```lua
-_G.Color = Color3.fromRGB(0, 0, 255) -- Color UI
-_G.Logo = 13990972098 -- ID Logo Your Hub
 local Win = library:Evil("Evo","Tư Bản",_G.Logo )
 ```
 # Create Tab
