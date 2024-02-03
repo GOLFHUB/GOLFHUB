@@ -1,68 +1,37 @@
-# Create color
+# Remote spy
 
-```lua
-_G.Color = Color3.fromRGB(0, 0, 255) -- Color UI
-_G.Logo = 13990972098 -- ID Logo Your Hub
 ```
-
-
-# Misc
-
-```diff
-local normal = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GOLFHUB/ui-normal-hub/2ce19f25f1f748f34b5a4db9f0460a8f38da6136/scr')))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/Forked/M%3ASimpleSpy%20V3",true))()
 ```
 
-# Create Window
-```lua
-local Win = library:Evil("Evo","Tư Bản",_G.Logo )
-```
-# Create Tab
-```lua
-local Tab = Win:CraftTab('Main') -- Name
-local Page = Tab:CraftPage('Main',1) -- Name,1 or 2
-```
-# Button
-```lua
-Page:Button('Button',function() --Name
-    print("t")
-end)
-```
-# Toggle
-```lua
-Page:Toggle('Test',nil,function(a) -- Toggle,Def,callback
-    print(a)
-end)
-```
-# Dropdown
-```lua
-Page:Dropdown("Dropdown",{"1","2"},{""},function(v)
-    print(v)
-end)
+# Dark Dex v3
 
-Page:MultiDropdown("MultiDropdown",{"MultiDropdown","MultiDropdown2"},{""},function(v)
-    print(v)
-end)
 ```
-# Label
-```lua
-local A = Page:Label('Label') --name
-local B = Page:LabelLog('Label') --name
+loadstring(game:HttpGet("https://github.com/Hosvile/DEX-Explorer/releases/latest/download/main.lua", true))()
 ```
-# Set Label 
-```lua
-A:Refresh("A") -- name
-B:Refresh("B") -- name
-B:Color(Color3.fromRGB(255, 255, 255))  -- Color
+
+# Hydroxide(remote spy upgraded)
+
 ```
-# Slider
-```lua
-Page:Slider("Slider",true,0,100,1,function(value)
-    print(value)
-end)
+local owner = "Hosvile"
+local branch = "revision"
+
+local function webImport(file)
+    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/MC-Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+end
+
+webImport("init")
+webImport("ui/main")
 ```
-# TextBox
-```lua
-Page:Textbox("Test","",function(v)
-	print(v)
-end)
+
+# Find Position(Vector3)
+
+```
+setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+```
+
+# Find placeid
+```
+MapPlaceId = game.PlaceId
+setclipboard('Place ID : '..MapPlaceId)
 ```
